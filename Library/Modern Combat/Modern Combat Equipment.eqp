@@ -1,0 +1,1874 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "eav2-NrWldYCGgBKX",
+			"description": "Zastava M93 Black Arrow",
+			"notes": "12.7x108mm",
+			"tech_level": "9",
+			"legality_class": "2",
+			"tags": [
+				"Gun",
+				"Rifle",
+				"Sniper"
+			],
+			"value": 6500,
+			"weight": "35 lb",
+			"weapons": [
+				{
+					"id": "WlqbAqKNHGfGARZG_",
+					"damage": {
+						"type": "pi",
+						"base": "12d+1"
+					},
+					"strength": "17†",
+					"usage": "Shot",
+					"accuracy": "3",
+					"range": "1,000/9,000",
+					"rate_of_fire": "1",
+					"shots": "5+1(3)",
+					"bulk": "-7",
+					"recoil": "6",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "12d+1 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 6500,
+				"extended_weight": "35 lb"
+			}
+		},
+		{
+			"id": "EUUo-r31SYb2YPS8W",
+			"description": "Cybernetics!",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "e0R5j2Phm8l6xq690",
+					"description": "GPI Install",
+					"notes": "The first step in cybernetic integration.  Major Prodecure.",
+					"legality_class": "4",
+					"value": 5000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 5000,
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": 5000,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eyOx6o2xBi0BhkfGd",
+			"description": "Quick-Detach Slide-Lock",
+			"notes": "Can be toggled on/off on a firearm.  Locks the slide mechanism, converting the weapon into RoF 1 with -1 Hearing.",
+			"legality_class": "4",
+			"value": 250,
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 250,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "e-8kZ4kgzqstyzW4s",
+			"description": "Purity Mine",
+			"notes": "A demon-detecting landmine.  Activates in a 5ft radius.",
+			"legality_class": "4",
+			"value": 200,
+			"weight": "5 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 200,
+				"extended_weight": "5 lb"
+			}
+		},
+		{
+			"id": "evfS686-ULemlU-5-",
+			"description": "Biofoam Canister",
+			"notes": "Stems bleeding in applied area.  First-aid +5 roll.",
+			"legality_class": "4",
+			"value": 100,
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 100,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eo9dE5a0qVJP0IREm",
+			"description": "PKM",
+			"notes": "7.62x54R",
+			"tech_level": "7",
+			"legality_class": "4",
+			"tags": [
+				"Gun",
+				"Rifle",
+				"Machine Gun"
+			],
+			"value": 4950,
+			"weight": "19.25 lb",
+			"weapons": [
+				{
+					"id": "WIKfHz6aJ1y1XixPA",
+					"damage": {
+						"type": "pi",
+						"base": "6d+1"
+					},
+					"strength": "12†",
+					"usage": "Shot",
+					"accuracy": "4",
+					"range": "500/5,000",
+					"rate_of_fire": "11",
+					"shots": "100+1(5)",
+					"bulk": "-6",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "6d+1 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 4950,
+				"extended_weight": "19.25 lb"
+			}
+		},
+		{
+			"id": "eW66M4CX81-ITjIjq",
+			"description": "IR-O/U Needlepoint",
+			"notes": "5.56x45 and 7.62x51 NATO.",
+			"tech_level": "9",
+			"legality_class": "4",
+			"tags": [
+				"Guns",
+				"Rifle",
+				"Multi-barrel"
+			],
+			"value": 2600,
+			"weight": "8.8 lb",
+			"weapons": [
+				{
+					"id": "WzbG-TXTXxXFh9sQc",
+					"damage": {
+						"type": "pi",
+						"base": "5d+1"
+					},
+					"strength": "12†",
+					"usage": "Shot - Overbarrel 7.62",
+					"accuracy": "4",
+					"range": "500",
+					"rate_of_fire": "3",
+					"shots": "8+1(3)",
+					"bulk": "-6",
+					"recoil": "3",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "5d+1 pi"
+					}
+				},
+				{
+					"id": "WYdqlHY-UekMnbkMP",
+					"damage": {
+						"type": "pi",
+						"base": "4d+1"
+					},
+					"strength": "12†",
+					"usage": "Shot - Underbarrel 5.56",
+					"accuracy": "3",
+					"range": "500",
+					"rate_of_fire": "13",
+					"shots": "30+1(3)",
+					"bulk": "-6",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "4d+1 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 2600,
+				"extended_weight": "8.8 lb"
+			}
+		},
+		{
+			"id": "e5mpz8uz9-VXoGZ5l",
+			"description": "DP-12",
+			"notes": "12ga.",
+			"tech_level": "9",
+			"legality_class": "4",
+			"tags": [
+				"Gun",
+				"Shotgun",
+				"Pump",
+				"Multi-barrel"
+			],
+			"value": 1395,
+			"weight": "9.3 lb",
+			"weapons": [
+				{
+					"id": "Wf473NciAr6kygcUC",
+					"damage": {
+						"type": "pi",
+						"base": "1d+1"
+					},
+					"strength": "13†",
+					"usage": "Shot",
+					"accuracy": "3",
+					"range": "60/1,200",
+					"rate_of_fire": "2x24",
+					"shots": "14+2(2i)",
+					"bulk": "-5",
+					"recoil": "1/8",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "1d+1 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 1395,
+				"extended_weight": "9.3 lb"
+			}
+		},
+		{
+			"id": "edLhstBQvET_458AC",
+			"description": "IR-4G Monsoon",
+			"notes": "4ga shells.  Also accepts 23mm projectiles.",
+			"legality_class": "4",
+			"tags": [
+				"Gun",
+				"Shotgun",
+				"Launcher"
+			],
+			"value": 1370,
+			"weight": "13 lb",
+			"weapons": [
+				{
+					"id": "Wzavuw5Kp-Mxnxxk9",
+					"damage": {
+						"type": "pi",
+						"base": "2d+1"
+					},
+					"strength": "15†",
+					"usage": "Shot",
+					"accuracy": "4",
+					"range": "80/200",
+					"rate_of_fire": "2x8",
+					"shots": "6+1(2i)",
+					"bulk": "-5",
+					"recoil": "1/10",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "2d+1 pi"
+					}
+				},
+				{
+					"id": "WmBwjSAC8B3H0UdWr",
+					"damage": {
+						"type": "pi",
+						"base": "7d+3"
+					},
+					"strength": "15†",
+					"usage": "Slug",
+					"accuracy": "4",
+					"range": "80/200",
+					"rate_of_fire": "2x8",
+					"shots": "6+1(2i)",
+					"bulk": "-5",
+					"recoil": "10",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "7d+3 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 1370,
+				"extended_weight": "13 lb"
+			}
+		},
+		{
+			"id": "ebvxTCPwOvrzAIb3C",
+			"description": "Rsh-12",
+			"notes": "12.7x55",
+			"legality_class": "4",
+			"tags": [
+				"Guns",
+				"Pistol",
+				"Revolver"
+			],
+			"value": 1200,
+			"weight": "4.9 lb",
+			"weapons": [
+				{
+					"id": "WXuEqUA_udTTFmGd-",
+					"damage": {
+						"type": "pi",
+						"base": "9d"
+					},
+					"strength": "16",
+					"usage": "Shot",
+					"accuracy": "3",
+					"range": "700/5,000",
+					"rate_of_fire": "1",
+					"shots": "5(3i)",
+					"bulk": "-3",
+					"recoil": "7",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "9d pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 1200,
+				"extended_weight": "4.9 lb"
+			}
+		},
+		{
+			"id": "el4Q61uuYn8jC0On_",
+			"description": "Gael's Repeating Crossbow",
+			"notes": "???",
+			"legality_class": "4",
+			"tags": [
+				"Crossbow"
+			],
+			"value": 900,
+			"weight": "14 lb",
+			"weapons": [
+				{
+					"id": "W0NrydC53xZzTl116",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "4"
+					},
+					"strength": "13†",
+					"usage": "Shot",
+					"accuracy": "3",
+					"range": "x20/x25",
+					"rate_of_fire": "8",
+					"shots": "8+1(4i)",
+					"bulk": "-8",
+					"recoil": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Crossbow"
+						}
+					],
+					"calc": {
+						"damage": "thr+4 imp"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 900,
+				"extended_weight": "14 lb"
+			}
+		},
+		{
+			"id": "epxvkbOodfUXwlOQ9",
+			"description": "HR-1 Wasp",
+			"notes": "Haptic .22LR.  Can be loaded with normal .22LR, with +1 Rcl and 2 Malf.",
+			"tech_level": "9",
+			"legality_class": "4",
+			"tags": [
+				"Guns",
+				"Pistol",
+				"Stun"
+			],
+			"value": 800,
+			"weight": "1.5 lb",
+			"weapons": [
+				{
+					"id": "WaYr97rMlRj3RjTpA",
+					"damage": {
+						"type": "pi-",
+						"base": "1d+1"
+					},
+					"strength": "7",
+					"usage": "Shot",
+					"accuracy": "3",
+					"range": "50/550",
+					"rate_of_fire": "3",
+					"shots": "21+1(3)",
+					"bulk": "-2",
+					"recoil": "1",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "1d+1 pi-"
+					}
+				},
+				{
+					"id": "WYWUxF228MEVLPScs",
+					"damage": {
+						"type": "aff -2 HT",
+						"base": "0"
+					},
+					"usage": "Follow-up",
+					"usage_notes": "On a failed HT roll.  Target gets +1 pain shock for 20-HT seconds.  If pain shock exceeds 4 with this effect, target gets -1DX for 60-HT seconds.",
+					"rate_of_fire": "1",
+					"calc": {
+						"damage": "aff -2 HT"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 800,
+				"extended_weight": "1.5 lb"
+			}
+		},
+		{
+			"id": "esykLA6RPEyiqIhE0",
+			"description": "Timberline Spec War",
+			"notes": "+1 as Skill Tool.",
+			"tech_level": "7",
+			"legality_class": "4",
+			"tags": [
+				"Melee",
+				"Knife"
+			],
+			"value": 250,
+			"weight": "1 lb",
+			"weapons": [
+				{
+					"id": "wC8Pkwd_xe7acHMmS",
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "-2"
+					},
+					"strength": "5",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"damage": "sw-2 cut"
+					}
+				},
+				{
+					"id": "w8B0dP03HnoS8RXJU",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "1"
+					},
+					"strength": "5",
+					"usage": "Stab",
+					"reach": "C",
+					"parry": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"damage": "thr+1 imp"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 250,
+				"extended_weight": "1 lb"
+			}
+		},
+		{
+			"id": "eXkRt4KEEpRGKE6mv",
+			"description": "SpyderCo Model G10",
+			"notes": "+1 Holdout.  +2 as Skill Tool.",
+			"tech_level": "7",
+			"legality_class": "4",
+			"tags": [
+				"Melee",
+				"Knife",
+				"Holdout"
+			],
+			"value": 150,
+			"weight": "0.5 lb",
+			"weapons": [
+				{
+					"id": "wqEqaBe1qHVKB0cJe",
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "-3"
+					},
+					"strength": "5",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"damage": "sw-3 cut"
+					}
+				},
+				{
+					"id": "w5YOcYapi4dZAf7EO",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "5",
+					"usage": "Stab",
+					"reach": "C",
+					"parry": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"damage": "thr imp"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 150,
+				"extended_weight": "0.5 lb"
+			}
+		},
+		{
+			"id": "e-hQXurnE_W2d3aga",
+			"description": "Cold Steel Delta Dart",
+			"notes": "Non-metallic.",
+			"tech_level": "8",
+			"legality_class": "4",
+			"tags": [
+				"Melee",
+				"Knife",
+				"Holdout"
+			],
+			"value": 50,
+			"weight": "0.2 lb",
+			"weapons": [
+				{
+					"id": "wF5Rq2fWrjVwTpS2H",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "1"
+					},
+					"strength": "5",
+					"usage": "Stab",
+					"reach": "C",
+					"parry": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"damage": "thr+1 imp"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 50,
+				"extended_weight": "0.2 lb"
+			}
+		},
+		{
+			"id": "e205dSh_uE-CtAqTD",
+			"description": "12.7x108mm Round",
+			"legality_class": "4",
+			"tags": [
+				"Bullet"
+			],
+			"value": 6,
+			"weight": "0.33 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 6,
+				"extended_weight": "0.33 lb"
+			}
+		},
+		{
+			"id": "e7eS_WqO_Ypuh6GfN",
+			"description": "4ga Slug",
+			"legality_class": "4",
+			"tags": [
+				"Bullet",
+				"Shell"
+			],
+			"value": 4,
+			"weight": "0.25 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 4,
+				"extended_weight": "0.25 lb"
+			}
+		},
+		{
+			"id": "eq4UZOJ1L4Za1YsTW",
+			"description": ".50 BMG Round",
+			"legality_class": "4",
+			"tags": [
+				"Bullet"
+			],
+			"value": 3.5,
+			"weight": "0.3 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 3.5,
+				"extended_weight": "0.3 lb"
+			}
+		},
+		{
+			"id": "eUlogKF7dPhVviK1q",
+			"description": ".300 BLK",
+			"notes": "When used subsonic, multiply range/damge by 0.8.",
+			"legality_class": "4",
+			"tags": [
+				"Bullet"
+			],
+			"value": 0.6,
+			"weight": "0.03 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0.6,
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
+			"id": "eieAcsURVfLcW0zVg",
+			"description": "4ga Buckshot",
+			"legality_class": "4",
+			"tags": [
+				"Bullet",
+				"Shell"
+			],
+			"value": 3,
+			"weight": "0.2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 3,
+				"extended_weight": "0.2 lb"
+			}
+		},
+		{
+			"id": "eV4n0TpRSg5Mk1SL4",
+			"description": "Sig MCX LT Carbine",
+			"notes": "300 BLK.  9in barrel.",
+			"legality_class": "4",
+			"value": 1900,
+			"weight": "6 lb",
+			"weapons": [
+				{
+					"id": "Wyt1UKQsTzc5cCYW9",
+					"damage": {
+						"type": "pi",
+						"base": "3d+2"
+					},
+					"strength": "8†",
+					"usage": "Shot",
+					"accuracy": "4",
+					"range": "300/3,500",
+					"rate_of_fire": "13",
+					"shots": "30+1(3)",
+					"bulk": "-4",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "3d+2 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 1900,
+				"extended_weight": "6 lb"
+			}
+		},
+		{
+			"id": "ene5O_2OJ1LKGm8MS",
+			"description": "Sig MCX Rattler SBR",
+			"notes": "300 BLK.  5in barrel.  Folding stock.",
+			"legality_class": "4",
+			"value": 2100,
+			"weight": "5 lb",
+			"weapons": [
+				{
+					"id": "WZYjUw5jMZoAx_WDk",
+					"damage": {
+						"type": "pi",
+						"base": "3d"
+					},
+					"strength": "7†",
+					"usage": "Shot",
+					"accuracy": "4",
+					"range": "250/3,000",
+					"rate_of_fire": "15",
+					"shots": "30+1(3)",
+					"bulk": "-3",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "3d pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 2100,
+				"extended_weight": "5 lb"
+			}
+		},
+		{
+			"id": "eyQBCcnHQ2UX2J0Nw",
+			"description": "Pulse Heartbeat Scanner",
+			"notes": "Scans (through walls) in a 20ft range, and returns a small radar image showing relative location.",
+			"legality_class": "4",
+			"value": 2000,
+			"weight": "3 lb",
+			"vtt_notes": "Another very plausible device.  ",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 2000,
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "eSIbU6p97vamKLqxz",
+			"description": "Sig MCX Disinhibition",
+			"notes": "300 BLK.  22in barrel.",
+			"legality_class": "4",
+			"value": 2300,
+			"weight": "11 lb",
+			"weapons": [
+				{
+					"id": "WiuOx8sXLtn9MydLB",
+					"damage": {
+						"type": "pi",
+						"base": "4d+2"
+					},
+					"strength": "10†",
+					"usage": "Shot",
+					"accuracy": "4",
+					"range": "350/4,000",
+					"rate_of_fire": "3",
+					"shots": "30+1(3)",
+					"bulk": "-5",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "4d+2 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 2300,
+				"extended_weight": "11 lb"
+			}
+		},
+		{
+			"id": "eIuYxlF8eSkm4wu3p",
+			"description": "UK1 Sharpshooter",
+			"notes": "An extremely plausible revolver which can be spun to cause ricochet with +2dmg.",
+			"legality_class": "4",
+			"value": 2500,
+			"weapons": [
+				{
+					"id": "Wl5i_MtNtPqP_Krul",
+					"damage": {
+						"type": "pi+",
+						"base": "3d+2"
+					},
+					"strength": "12",
+					"usage": "Shot",
+					"accuracy": "3",
+					"range": "210/2,310",
+					"rate_of_fire": "1",
+					"shots": "6(3i)",
+					"bulk": "-3",
+					"recoil": "4",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine-Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"damage": "3d+2 pi+"
+					}
+				}
+			],
+			"vtt_notes": "Accelerating spins takes an action, and causes your roll to decrease by two each time - but with an added ricochet.  Each ricochet is another -1 once fired.  As an example: Revolver at tier-2 spin.  Fired for torso at -4, ricochet to hit another target's torso at -5.  If ruled to be extra improbable, penalties will be applied.",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 2500,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eMadm0FGZdObc6G3o",
+			"description": "CETME",
+			"notes": "7.92x41",
+			"tech_level": "7",
+			"legality_class": "4",
+			"weapons": [
+				{
+					"id": "Wx0mR1D8VNgJFBBJ4",
+					"damage": {
+						"type": "pi",
+						"base": "6d+1"
+					},
+					"strength": "11†",
+					"usage": "Shot",
+					"accuracy": "4",
+					"range": "500/5,000",
+					"rate_of_fire": "9",
+					"shots": "20+1(3)",
+					"bulk": "-5",
+					"recoil": "5",
+					"calc": {
+						"damage": "6d+1 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "E42ALp67bsm0qJItz",
+			"description": "Template Items",
+			"notes": "Do I look like I want to manually assign skills every single item?",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "e97taM2hfaBeW52tE",
+					"description": "Template Knife",
+					"legality_class": "4",
+					"weapons": [
+						{
+							"id": "wxMeBgF6Wh5WCCLBD",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"reach": "1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Knife"
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eK4U2H60Mb0V9KL8t",
+					"description": "Template LMG",
+					"legality_class": "4",
+					"weapons": [
+						{
+							"id": "WjsL2u-VcUffKF4hA",
+							"damage": {
+								"type": "cr",
+								"base": "1d"
+							},
+							"usage": "Shot",
+							"rate_of_fire": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Grenade Launcher",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Machine-Gun"
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Rifle",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Shotgun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Submachine Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Pistol",
+									"modifier": -2
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eTpjT0mHuvC2r98FO",
+					"description": "Template Pistol",
+					"legality_class": "4",
+					"weapons": [
+						{
+							"id": "W6ChloxyBFAJ9mSyv",
+							"damage": {
+								"type": "cr",
+								"base": "1d"
+							},
+							"usage": "Shot",
+							"rate_of_fire": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Grenade Launcher",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Machine-Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Rifle",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Shotgun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Submachine Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Pistol"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eULwb4pS6s3GHuHvE",
+					"description": "Template Rfile",
+					"legality_class": "4",
+					"weapons": [
+						{
+							"id": "WiuO7we9LIvXkRilK",
+							"damage": {
+								"type": "cr",
+								"base": "1d"
+							},
+							"usage": "Shot",
+							"rate_of_fire": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Grenade Launcher",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Machine-Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Rifle"
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Shotgun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Submachine Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Pistol",
+									"modifier": -2
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ec5NWjJ30YD0KvmIp",
+					"description": "Template Shotgun",
+					"legality_class": "4",
+					"weapons": [
+						{
+							"id": "WIt1R5_TkHiIaHO2q",
+							"damage": {
+								"type": "cr",
+								"base": "1d"
+							},
+							"usage": "Shot",
+							"rate_of_fire": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Grenade Launcher",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Machine-Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Rifle",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Shotgun"
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Submachine Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Pistol",
+									"modifier": -2
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eBZ9FLBa1j-etDKa1",
+					"description": "Template SMG",
+					"legality_class": "4",
+					"weapons": [
+						{
+							"id": "W4o2tPXdnUzNtgGPy",
+							"damage": {
+								"type": "cr",
+								"base": "1d"
+							},
+							"usage": "Shot",
+							"rate_of_fire": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Grenade Launcher",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Machine-Gun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Rifle",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Shotgun",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Submachine Gun"
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Pistol",
+									"modifier": -2
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		}
+	]
+}
