@@ -1,0 +1,1479 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "to6HBKD8WRtIKCdZR",
+			"name": "Bullet Time",
+			"notes": "You can use your melee weapon to parry bullets, at a penalty based on shots parried.",
+			"tags": [
+				"Advantage",
+				"Cinematic",
+				"Defense",
+				"Melee"
+			],
+			"base_points": 25,
+			"calc": {
+				"points": 25
+			}
+		},
+		{
+			"id": "t96Zk3mzvT4IvWA_y",
+			"name": "Thin-Blooded",
+			"notes": "You make bleed rolls at 2x the normal rate.",
+			"tags": [
+				"Disadvantage",
+				"Leveled",
+				"Health",
+				"Blood"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thick-Blooded"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points_per_level": -10,
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "tIEu13LwuVwuZfJSG",
+			"name": "Psycho Syndrome",
+			"notes": "At any time the GM so desires, you will feel compelled to kill a target.  You can roll IQ-3 every second to break the trance.  But you shouldn't.  Give in instead!",
+			"tags": [
+				"Disadvantage",
+				"Mental",
+				"Aggressive",
+				"Killing"
+			],
+			"base_points": -25,
+			"calc": {
+				"points": -25
+			}
+		},
+		{
+			"id": "trzahjoQNMwTRMnYb",
+			"name": "Thick-Blooded",
+			"notes": "You make bleed rolls at 1/2x the normal rate.",
+			"tags": [
+				"Advantage",
+				"Health",
+				"Blood"
+			],
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "tVviyiG03wr6rcKlm",
+			"name": "Disjointed Bones",
+			"notes": "You are horribly, terribly disfigured.  But, with benefits!  Anyone who can recognize your hideous bone structure is -8 Reaction.",
+			"tags": [
+				"Advantage",
+				"Acrobatic",
+				"Defense"
+			],
+			"base_points": 20,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "from others who can see you and your ugly fucking bones.",
+					"amount": -8
+				},
+				{
+					"type": "skill_point_bonus",
+					"name": {
+						"compare": "is",
+						"qualifier": "Climbing"
+					},
+					"amount": 3
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "dodge",
+					"amount": 1
+				},
+				{
+					"type": "skill_point_bonus",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acrobatics"
+					},
+					"amount": 3
+				}
+			],
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "TngX6NlGBx0KJJdXW",
+			"name": "Devil Deal Traits",
+			"children": [
+				{
+					"id": "TQ35MexI5pOOfQ5Tg",
+					"name": "Minor",
+					"children": [
+						{
+							"id": "tNZZ1VGAyuTCPmCfU",
+							"name": "Bladed Tail",
+							"notes": "Gives a bladed tail with perform basic manipulation and can attack.  Levels increase damage.",
+							"tags": [
+								"Advantage",
+								"Combat",
+								"Brawling",
+								"Leveled"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 10,
+							"points_per_level": 2,
+							"weapons": [
+								{
+									"id": "wNuSvuZpruNRBLiV_",
+									"damage": {
+										"type": "cut",
+										"st": "thr",
+										"base": "1"
+									},
+									"usage": "Tail Slash",
+									"reach": "C,1",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Karate"
+										},
+										{
+											"type": "skill",
+											"name": "Knife",
+											"modifier": -2
+										},
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										}
+									],
+									"calc": {
+										"damage": "thr+1 cut"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 1
+								},
+								{
+									"type": "weapon_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 0.5,
+									"leveled": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "t_UJWqDGE3klMS-mn",
+							"name": "Extra Eyes",
+							"notes": "For each level, you have an extra pair of eyes!  At level 3, you gain +1 dodge.",
+							"tags": [
+								"Advantage",
+								"Vision",
+								"Defense"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 10
+										},
+										"which": "vision"
+									},
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 2,
+							"points_per_level": 3,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "vision",
+									"amount": 2,
+									"per_level": true
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "dodge",
+									"amount": 0.34,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t7OwzU2VPB4Zgp904",
+							"name": "Unholy Catfall",
+							"notes": "It's like normal Catfall, but better! Since you're a demon.",
+							"tags": [
+								"Advantage",
+								"Acrobatic"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 1
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "feet when calculating fall damage.  Also, roll DX to halve that fall damage.",
+									"amount": -30
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "tUDDyGSjA4RFgNCZa",
+							"name": "Detectable Demon",
+							"notes": "Even the primitive technology used in modern times will report you as a demon! For shame.",
+							"tags": [
+								"Disadvantage",
+								"Criminal"
+							],
+							"base_points": -2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -1
+								}
+							],
+							"calc": {
+								"points": -2
+							}
+						},
+						{
+							"id": "tdHjc_Ve-RSWZsT8b",
+							"name": "Black Blood",
+							"notes": "You bleed black!  It's a fashion statement officer, I'm a human I swear.",
+							"tags": [
+								"Disadvantage",
+								"Criminal"
+							],
+							"base_points": -2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -1
+								}
+							],
+							"calc": {
+								"points": -2
+							}
+						},
+						{
+							"id": "ttAAURBoCS-zlDnRZ",
+							"name": "God-fearing",
+							"notes": "You, like a good Christian demon, cannot willingly be within 20ft of any Christian imagery - unless in combat.",
+							"tags": [
+								"Disadvantage",
+								"Restriction"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -1
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tT7uc-bFdYmuba2wn",
+							"name": "Deep Speech",
+							"notes": "Both a language and trait.  You know the garbled tongue of devils, but sometimes speak it at random instead of a normal one.",
+							"tags": [
+								"Disadvantage",
+								"Language",
+								"Social"
+							],
+							"base_points": -1,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -1
+								}
+							],
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tf4xfD_4ew-nYWH3O",
+							"name": "Spade Tail",
+							"notes": "A catch-all trait for features that are obviously demonic, and difficult to hide.  If you have multiple, level this trait to that amount.",
+							"tags": [
+								"Disadvantage",
+								"Criminal"
+							],
+							"base_points": -5,
+							"points_per_level": -2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -1
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tQ4LAc8dzAwmZv9dO",
+							"name": "Devil's Luck",
+							"notes": "Req: 1 minor negative.  Reroll any die related to you twice an hour.",
+							"tags": [
+								"Advantage",
+								"Reroll",
+								"Meta"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 20
+							}
+						}
+					],
+					"calc": {
+						"points": 35
+					}
+				},
+				{
+					"id": "ToDfxKmyWHn36l5BI",
+					"name": "Major",
+					"children": [
+						{
+							"id": "tfzuy9N1n8TXhXKCY",
+							"name": "Pharyngeal Jaw",
+							"notes": "A second jaw inside your mouth which retracts when unneeded.",
+							"tags": [
+								"Advantage",
+								"Combat",
+								"Biting"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 5,
+							"weapons": [
+								{
+									"id": "wUsZwKtApSuly587Q",
+									"damage": {
+										"type": "pi",
+										"st": "thr"
+									},
+									"usage": "Bite",
+									"reach": "C",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Karate"
+										},
+										{
+											"type": "skill",
+											"name": "Knife",
+											"modifier": -2
+										},
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										}
+									],
+									"calc": {
+										"damage": "thr pi"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tYlyDg2EA1ppO5Lbc",
+							"name": "Walk on Water",
+							"notes": "Does as it says on the tin - treat the surface of liquids like solid ground.",
+							"tags": [
+								"Advantage",
+								"Movement"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "txVIsteZhZVlvzy5U",
+							"name": "Shadow Form",
+							"notes": "You can alter the shape/size of your body when not exposed to light.  Once you are, you will return to normal.",
+							"tags": [
+								"Advantage",
+								"Darkness"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "toVHG9-L_TWfwtRwL",
+							"name": "Bloodthirsty",
+							"notes": "After drinking a pint of blood, gain one charge.  Each charge is available for 10 in-game minutes.  Once used, heal one point, and take another turn.",
+							"tags": [
+								"Advantage",
+								"Combat",
+								"Healing",
+								"Blood",
+								"Trigger"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 50,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 50
+							}
+						},
+						{
+							"id": "ta2k27y9ke8LNpgan",
+							"name": "Healing Factor",
+							"notes": "Makes your body heal every hour, instead of every day.",
+							"tags": [
+								"Advantage",
+								"Health",
+								"Healing"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 25,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "t5Bdc7JXkPKSH8dQD",
+							"name": "Devil's Intuition",
+							"notes": "You can ask the GM for any information that your character could conceivably want.  Make an IQ roll based on the question, and get an answer based on the roll.",
+							"tags": [
+								"Advantage",
+								"Meta",
+								"Mental"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "tcm56vRP7xFphtnW9",
+							"name": "Dark Vision",
+							"notes": "Cheaper than the base version available to humans, that''s that demon discount, baby!",
+							"tags": [
+								"Advantage",
+								"Vision"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "tbNZ5CLKjeyEr_c9x",
+							"name": "Shark Teeth",
+							"notes": "You now have four rows of teeth!  Your bite makes people very hurt, and you eat twice as fast.",
+							"tags": [
+								"Advantage",
+								"Combat",
+								"Biting"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Slow Eater"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									},
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 10,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"specialization": {
+										"compare": "contains",
+										"qualifier": "Bite"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 3
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tJP6CVl78zrcIJA5v",
+							"name": "Bloodsucker",
+							"notes": "Rather than eating food, you must ingest five pints of human blood per day.",
+							"tags": [
+								"Disadvantage",
+								"Blood"
+							],
+							"base_points": -25,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -25
+							}
+						},
+						{
+							"id": "tmMyTwfp_cpUhv3NP",
+							"name": "Unending Bloodlust",
+							"notes": "You will always kill downed foes, even if tactically unreasonable, you MUST try.",
+							"tags": [
+								"Disadvantage",
+								"Aggressive",
+								"Killing"
+							],
+							"base_points": -20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "tqhdHKvPzDiavxhC1",
+							"name": "Rattlesnake",
+							"notes": "You are incapable of speech, and hiss when you feel threatened.",
+							"tags": [
+								"Disadvantage",
+								"Language",
+								"Social"
+							],
+							"base_points": -20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "t3rwFzTDs_zronScP",
+							"name": "Decognition",
+							"notes": "You are occasionally given false information by your DM which your character must believe.",
+							"tags": [
+								"Disadvantage",
+								"Meta",
+								"Mental"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Devil's Intuition"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": -20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "t8KuadNy4YonIHgg5",
+							"name": "Lightweight",
+							"notes": "Your weight is cut in half.  You are naturally worse in grapples, and take 2x knockback.",
+							"tags": [
+								"Disadvantage",
+								"Combat",
+								"Grapple"
+							],
+							"base_points": -15,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sumo"
+									},
+									"amount": -5
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Judo"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Wrestling"
+									},
+									"amount": -3
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -15
+							}
+						}
+					],
+					"calc": {
+						"points": 55
+					}
+				},
+				{
+					"id": "TPFHZ0qHcg-e9mXfI",
+					"name": "Extreme",
+					"children": [
+						{
+							"id": "tX9K3pomQWsTXy7yF",
+							"name": "Speed Burst",
+							"notes": "By spending one FP, moving up to your full move still counts as one step.",
+							"tags": [
+								"Advantage",
+								"Movement",
+								"Trigger"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "tR2mvcdc9-1jS29Ax",
+							"name": "Invisibility",
+							"notes": "Weak invisibility that partially helps while moving, and helps greatly while standing still.  Won't fix your loud ass stomping though.",
+							"tags": [
+								"Advantage",
+								"Stealth",
+								"Trigger"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to Camoflague rolls while you are invisible.  Use half (round down) if you are moving.",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 4
+								}
+							],
+							"can_level": true,
+							"levels": 5,
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "tPshrD0lJITerrQrZ",
+							"name": "Blink",
+							"notes": "As an action, teleport up to your full move.  A Blink can go through walls at the cost of 2FP.",
+							"tags": [
+								"Advantage",
+								"Movement",
+								"Trigger"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 25,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "t3oTpMSBZ_8xhKHns",
+							"name": "Endless Flesh",
+							"notes": "For the duration of your flesh rapidly multiplying (10d6), you have double strength!  Can only be activated once per day.",
+							"tags": [
+								"Advantage",
+								"Combat",
+								"Trigger"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 40,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 40
+							}
+						},
+						{
+							"id": "tqhHvAvm-lJRr3oB1",
+							"name": "Demon Form",
+							"notes": "When you would fail a KO/Death save, heal by one health stage and enter a berserk trance.  This trance lasts until combat ends.  This ability can only activate once per hour.",
+							"tags": [
+								"Advantage",
+								"Combat",
+								"Trigger",
+								"Health"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 50,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 50
+							}
+						},
+						{
+							"id": "tE6zElQeE8ZjofrQH",
+							"name": "Wraith Form",
+							"notes": "While active (10d6 seconds), take two turns instead of one..  This ability can only activate once per day.",
+							"tags": [
+								"Advantage",
+								"Combat",
+								"Trigger"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 50,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 8
+								}
+							],
+							"calc": {
+								"points": 50
+							}
+						},
+						{
+							"id": "t-GJk4f019AeeXhOn",
+							"name": "Disposable Limbs",
+							"notes": "When your limbs are crippled, they come off. Missing limbs will regenerate over time while you sleep.",
+							"tags": [
+								"Disadvantage",
+								"Health"
+							],
+							"base_points": -40,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -4
+								}
+							],
+							"calc": {
+								"points": -40
+							}
+						},
+						{
+							"id": "tM2jN93BUmUaKIjkN",
+							"name": "Tagged and Cursed",
+							"notes": "Some people really do not like that you are alive.  Furthermore; some of those people will make sure you don't stay alive.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Criminal"
+							],
+							"base_points": -35,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -4
+								}
+							],
+							"calc": {
+								"points": -35
+							}
+						},
+						{
+							"id": "tddZfRLVCFes4cScz",
+							"name": "Wendigo-vision",
+							"notes": "You can only see objects based on motion.  You have a decent grasp of where walls are, innately.",
+							"tags": [
+								"Disadvantage",
+								"Health",
+								"Vision"
+							],
+							"base_points": -35,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -4
+								}
+							],
+							"calc": {
+								"points": -35
+							}
+						},
+						{
+							"id": "tBK82uaynL8y_6aVL",
+							"name": "Divine Curse",
+							"notes": "Your lovely GM can reroll one die per hour.",
+							"tags": [
+								"Disadvantage",
+								"Meta",
+								"Reroll"
+							],
+							"base_points": -35,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -4
+								}
+							],
+							"calc": {
+								"points": -35
+							}
+						},
+						{
+							"id": "teNWODknVSUp6_qVF",
+							"name": "Limitless Ego",
+							"notes": "When faced with life-threatening danger, you do not turn away.  Can be challenged by self-control.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Aggressive"
+							],
+							"cr": 12,
+							"base_points": -35,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -8
+								}
+							],
+							"calc": {
+								"points": -35
+							}
+						},
+						{
+							"id": "taw67mbDFx_bZRDh3",
+							"name": "Vorpal Blade",
+							"notes": "An obscenely large sword replaces an arm of choice! Carries all the normal penalties, but is accompanied by an obscenely strong melee weapon attach in its place.",
+							"tags": [
+								"Disadvantage",
+								"Health",
+								"Melee"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 10
+										},
+										"which": "st"
+									}
+								]
+							},
+							"base_points": -15,
+							"weapons": [
+								{
+									"id": "wCq7NjkKAA33M3vRj",
+									"damage": {
+										"type": "cut",
+										"st": "sw",
+										"base": "3",
+										"armor_divisor": 2
+									},
+									"strength": "10",
+									"usage": "Swung",
+									"reach": "1-2",
+									"parry": "0U",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Two-Handed Sword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shortsword",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Saber",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Rapier",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Broadsword"
+										}
+									],
+									"calc": {
+										"damage": "sw+3(2) cut"
+									}
+								},
+								{
+									"id": "w5SaNycruGRHdYeED",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "2",
+										"armor_divisor": 2
+									},
+									"strength": "10",
+									"usage": "Stab",
+									"reach": "1",
+									"parry": "0U",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Two-Handed Sword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shortsword",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Saber",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Rapier",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Broadsword"
+										}
+									],
+									"calc": {
+										"damage": "thr+2(2) imp"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "on tasks that are possible with one arm but that are usually executed with two",
+									"amount": -4
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": -4
+								}
+							],
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tHzXvrLXq9b5kBT7J",
+							"name": "Wisp Form",
+							"notes": "Wisp Form effectively lets you become mist.  This effect lasts 10d6 seconds after you start it, and carries stat changes.",
+							"tags": [
+								"Advantage",
+								"Defense",
+								"Trigger"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most"
+										},
+										"which": "devilbalance"
+									}
+								]
+							},
+							"base_points": 25,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dodge",
+									"amount": 2
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -4
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 4
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "devilbalance",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						}
+					],
+					"calc": {
+						"points": 35
+					}
+				}
+			],
+			"calc": {
+				"points": 125
+			}
+		}
+	]
+}
